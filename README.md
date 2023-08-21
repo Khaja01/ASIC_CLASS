@@ -150,8 +150,9 @@ Using the gcc compiler, we compiled the program to get the output.
 gcc p1.c
 ./a.out
 ```
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/8b7cf24b-d910-4882-b905-51b7d8f2bd8a)
 
-![1](https://github.com/akshatva7/pes_asic_class/assets/135726741/753b4fde-d1c4-4b9c-b256-6dc3f0ef9fa7)
+
 
 # RISCV GCC Compiler and Disassemble
 
@@ -160,19 +161,18 @@ Using the RISC-V GCC compiler, we compiled the C program.
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o p1.o p1.c
 ```
 Using ```ls -ltr p1.c``` we can check that the object file is created.
-![2](https://github.com/akshatva7/pes_asic_class/assets/135726741/e42a34de-c687-4a3e-855d-43e84ecd6e57)
 
 To get the dissembled ALP code for the C program,
 
 ```riscv64-unknown-elf-objdump -d p1.o | less ```
 
 In order to view the main section, type ```/main```
-![4](https://github.com/akshatva7/pes_asic_class/assets/135726741/44b0cbfb-5d8c-4af7-ba8e-ea229a312bef)
-
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/f177d53f-5182-4f77-b30d-d021d05d2de2)
 
 Here, since we used -O1 optimisation, the number of instructions are 26.
 
-![Screenshot from 2023-08-20 22-34-30](https://github.com/akshatva7/pes_asic_class/assets/135726741/684258c6-c347-465c-8804-eef593c15d45)
+
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/4663c7c2-659d-459f-bb3f-3aebca3ad63f)
 
 
 When we use -Ofast optimisation, we can see that the number of instructions have been reduced to 12.
@@ -237,7 +237,8 @@ int main(){
 	return 0;
 }
 ```
-![6](https://github.com/akshatva7/pes_asic_class/assets/135726741/6a85ec2f-b6a4-4ea8-af39-ca292370fde1)
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/a91de66e-f85b-43fa-b6e2-9441502bd32d)
+
 
 We wrote a C program ```p3.c```that shows the maximum and minimum values of 64bit Unsigned numbers.
 
@@ -253,7 +254,8 @@ int main(){
 	return 0;
 }
 ```
-![7](https://github.com/akshatva7/pes_asic_class/assets/135726741/6f1ea5b2-49dd-4afc-b1d9-80516056f9a8)
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/d44f9eb3-ac91-47fc-9269-b1c5ed70d653)
+
 
 
 
@@ -379,11 +381,7 @@ this would generate object file ```p3.o```
 
 ```spike pk p3.o```
 
-![8](https://github.com/akshatva7/pes_asic_class/assets/135726741/55f2d630-e640-4633-81ae-4d4a14218977)
-
-![Screenshot from 2023-08-20 22-01-13](https://github.com/akshatva7/pes_asic_class/assets/135726741/d20630e3-9bf5-4f96-a916-31655534aa09)
-
-![Screenshot from 2023-08-20 22-01-35](https://github.com/akshatva7/pes_asic_class/assets/135726741/8861a8bc-256d-47da-93b4-7492a3a5a1ed)
+![image](https://github.com/Khaja01/ASIC_CLASS/assets/100199685/ceadb142-9197-4d23-846c-543b9e535332)
 
 
 
